@@ -4,7 +4,7 @@
  */
 package core;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 /**
  *
@@ -14,8 +14,19 @@ public abstract class Producto {
     
     protected int id;
     protected String nombre;
-    protected Date fechaInicio;
-    protected Date fechaFin;
+    protected LocalDate fechaInicio;
+    protected LocalDate fechaFin;
     protected Boolean estadoActivo;
     protected float valor;
+
+    public Producto(int id, String nombre, Date fechaInicio, Date fechaFin, Boolean estadoActivo, float valor) {
+        this.id = id;
+        this.nombre = nombre;
+        this.fechaInicio = fechaInicio;
+        this.fechaFin = fechaFin;
+        this.estadoActivo = estadoActivo;
+        this.valor = valor;
+    }
+    
+    
 }

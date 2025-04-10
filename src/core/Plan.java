@@ -14,6 +14,12 @@ public class Plan extends Producto{
     
     private float valorMaximoCurso;
     private ArrayList<PlanCliente> planes;
+
+    public Plan(int id, String nombre, Object fechaInicio, Object fechaFin, Boolean estadoActivo, float valor, float valorMaximoCurso) {
+        super(id, nombre, fechaInicio, fechaFin, estadoActivo, valor);
+        this.valorMaximoCurso = valorMaximoCurso;
+        this.planes = new ArrayList<>();
+    }
     
     
     
