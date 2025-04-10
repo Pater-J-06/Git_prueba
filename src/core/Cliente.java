@@ -13,7 +13,7 @@ import java.util.ArrayList;
 public class Cliente extends Persona{
     
     private ArrayList<PlanCliente> planes;
-    private ArrayList<Producto> productos;
+    private ArrayList<ProductoCliente> productos;
     
     
     
